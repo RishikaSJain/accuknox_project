@@ -22,7 +22,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"ranajana@gmail.com\",\n    \"username\": \"ranjana\",\n    \"password\": \"password123\"\n}\n",
+					"raw": "{\n    \"email\": \"teddy@gmail.com\",\n    \"username\": \"teddy\",\n    \"password\": \"password123\"\n}\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -64,7 +64,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"skp@gmail.com\",\n    \"password\": \"password123\"\n}\n",
+					"raw": "{\n    \"email\": \"nakul@gmail.com\",\n    \"password\": \"password123\"\n}\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -98,7 +98,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTI2MTc2LCJpYXQiOjE3MTgxMjU4NzYsImp0aSI6IjVhNDFhNjYxMTE0MzQ3ZmY5MmMwMzU4YzA5MTM1YTQzIiwidXNlcl9pZCI6M30.y7EOkfG409r6qYyg1k3n-c2leUydYfCydSVJU7bIVwk",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTgzOTI0LCJpYXQiOjE3MTgxODM2MjQsImp0aSI6ImM5OTI4OWMyODY3MTRlOTViM2M5Y2Q5MmQ2YzJiZjU1IiwidXNlcl9pZCI6N30.QWWHMYywezKr_SxhSzGefDPmBT4C8UQtJpMSzXAOEqA",
 							"type": "string"
 						}
 					]
@@ -115,7 +115,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://127.0.0.1:8000/accuknox/search/?q=ana",
+					"raw": "http://127.0.0.1:8000/accuknox/search/?q=",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -132,7 +132,7 @@
 					"query": [
 						{
 							"key": "q",
-							"value": "ana"
+							"value": ""
 						}
 					]
 				}
@@ -147,7 +147,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTI4Mzk3LCJpYXQiOjE3MTgxMjgwOTcsImp0aSI6IjdhNzU2MGEwZmZmMDRhMTBhYmYyNGNjZjUwMjhiMjVkIiwidXNlcl9pZCI6M30.k7TGWlmtEfQJDVoEpxqLgr5Wy01CIL1LnVZ1uELyEOI",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTgzOTI0LCJpYXQiOjE3MTgxODM2MjQsImp0aSI6ImM5OTI4OWMyODY3MTRlOTViM2M5Y2Q5MmQ2YzJiZjU1IiwidXNlcl9pZCI6N30.QWWHMYywezKr_SxhSzGefDPmBT4C8UQtJpMSzXAOEqA",
 							"type": "string"
 						}
 					]
@@ -156,7 +156,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"to_user\": 2\r\n}",
+					"raw": "{\r\n    \"to_user\": 11\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -190,7 +190,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTMyMjAzLCJpYXQiOjE3MTgxMzE5MDMsImp0aSI6IjI5ZjZjMTUzNmE2ZTRhM2E5ZjlhMjFkZTRkZWQwYTY1IiwidXNlcl9pZCI6NX0.DL_X-B_Vj0brUOjQ2WYVDtB3ertZTxUNC36J_kpP3cc",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTg0NzE3LCJpYXQiOjE3MTgxODQ0MTcsImp0aSI6ImQyNjVmYTdiNDkwNTRhYzE4ODhlNTJhZTBmNzc4YmU1IiwidXNlcl9pZCI6OX0.09NRt0xKrK9k2empUTjMpiQZG2_RmCAX85DAo5df4lc",
 							"type": "string"
 						}
 					]
@@ -224,12 +224,12 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTMyNDU2LCJpYXQiOjE3MTgxMzIxNTYsImp0aSI6IjhjYWMyMTIwNTUxZjQ4ZDk4NzQ2OTlhNjY2MWVlYzkxIiwidXNlcl9pZCI6Nn0.NaTZgBmt65cfxFnbSiSdFFAJ--bmYzlrixMnxQjupD4",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTg0NzE3LCJpYXQiOjE3MTgxODQ0MTcsImp0aSI6ImQyNjVmYTdiNDkwNTRhYzE4ODhlNTJhZTBmNzc4YmU1IiwidXNlcl9pZCI6OX0.09NRt0xKrK9k2empUTjMpiQZG2_RmCAX85DAo5df4lc",
 							"type": "string"
 						}
 					]
 				},
-				"method": "PATCH",
+				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -241,7 +241,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/accuknox/friend-request/9/",
+					"raw": "http://127.0.0.1:8000/accuknox/friend-request/24/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -253,7 +253,7 @@
 					"path": [
 						"accuknox",
 						"friend-request",
-						"9",
+						"24",
 						""
 					]
 				}
@@ -268,7 +268,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTMzMTQwLCJpYXQiOjE3MTgxMzI4NDAsImp0aSI6IjZmMTgwOWIzYTM0MjRkMjM4MDc0NWIzYWI3OTJiODRiIiwidXNlcl9pZCI6M30.VV9mH4am4ybkoU38p_rBBudHSramwNheTRXl8dHf3gg",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTg0NzE3LCJpYXQiOjE3MTgxODQ0MTcsImp0aSI6ImQyNjVmYTdiNDkwNTRhYzE4ODhlNTJhZTBmNzc4YmU1IiwidXNlcl9pZCI6OX0.09NRt0xKrK9k2empUTjMpiQZG2_RmCAX85DAo5df4lc",
 							"type": "string"
 						}
 					]
