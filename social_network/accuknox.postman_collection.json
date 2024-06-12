@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "f12d7cfd-8d0d-439e-afa1-2f4abef03510",
+		"name": "accuknox",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36253185"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "bearer",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTIyOTkyLCJpYXQiOjE3MTgxMjI2OTIsImp0aSI6IjYxNjlhNDg5YTBiMTRhZjg5ZDVlMjU1MzE1N2IzOGIwIiwidXNlcl9pZCI6MX0.aW_-80gjPZCMM01Gzk6ZUoy9krCDxsgidjejBWz-kWc"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"ranajana@gmail.com\",\n    \"username\": \"ranjana\",\n    \"password\": \"password123\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accuknox/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accuknox",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "bearer",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTIyOTkyLCJpYXQiOjE3MTgxMjI2OTIsImp0aSI6IjYxNjlhNDg5YTBiMTRhZjg5ZDVlMjU1MzE1N2IzOGIwIiwidXNlcl9pZCI6MX0.aW_-80gjPZCMM01Gzk6ZUoy9krCDxsgidjejBWz-kWc"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"skp@gmail.com\",\n    \"password\": \"password123\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accuknox/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accuknox",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTI2MTc2LCJpYXQiOjE3MTgxMjU4NzYsImp0aSI6IjVhNDFhNjYxMTE0MzQ3ZmY5MmMwMzU4YzA5MTM1YTQzIiwidXNlcl9pZCI6M30.y7EOkfG409r6qYyg1k3n-c2leUydYfCydSVJU7bIVwk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Bearer-Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTIzNTI4LCJpYXQiOjE3MTgxMjMyMjgsImp0aSI6IjU2OTM2NTM1ZmFiNDQ0ZDFiMTdiM2EwZDJjN2QxNmZjIiwidXNlcl9pZCI6MX0.GxR_DsImqKw9pmoHKwxEeqrwQTLNvXZb2dLFtJqkKbI"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTIzNTI4LCJpYXQiOjE3MTgxMjMyMjgsImp0aSI6IjU2OTM2NTM1ZmFiNDQ0ZDFiMTdiM2EwZDJjN2QxNmZjIiwidXNlcl9pZCI6MX0.GxR_DsImqKw9pmoHKwxEeqrwQTLNvXZb2dLFtJqkKbI"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/accuknox/search/?q=ana",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accuknox",
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "ana"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "friend-request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTI4Mzk3LCJpYXQiOjE3MTgxMjgwOTcsImp0aSI6IjdhNzU2MGEwZmZmMDRhMTBhYmYyNGNjZjUwMjhiMjVkIiwidXNlcl9pZCI6M30.k7TGWlmtEfQJDVoEpxqLgr5Wy01CIL1LnVZ1uELyEOI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to_user\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accuknox/friend-request/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accuknox",
+						"friend-request",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "friend-list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTMyMjAzLCJpYXQiOjE3MTgxMzE5MDMsImp0aSI6IjI5ZjZjMTUzNmE2ZTRhM2E5ZjlhMjFkZTRkZWQwYTY1IiwidXNlcl9pZCI6NX0.DL_X-B_Vj0brUOjQ2WYVDtB3ertZTxUNC36J_kpP3cc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/accuknox/friends/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accuknox",
+						"friends",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "request-status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTMyNDU2LCJpYXQiOjE3MTgxMzIxNTYsImp0aSI6IjhjYWMyMTIwNTUxZjQ4ZDk4NzQ2OTlhNjY2MWVlYzkxIiwidXNlcl9pZCI6Nn0.NaTZgBmt65cfxFnbSiSdFFAJ--bmYzlrixMnxQjupD4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"action\": \"accept\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accuknox/friend-request/9/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accuknox",
+						"friend-request",
+						"9",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pending-requests",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4MTMzMTQwLCJpYXQiOjE3MTgxMzI4NDAsImp0aSI6IjZmMTgwOWIzYTM0MjRkMjM4MDc0NWIzYWI3OTJiODRiIiwidXNlcl9pZCI6M30.VV9mH4am4ybkoU38p_rBBudHSramwNheTRXl8dHf3gg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/accuknox/pending-requests/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accuknox",
+						"pending-requests",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
