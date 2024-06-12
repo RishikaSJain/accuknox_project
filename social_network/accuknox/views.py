@@ -56,9 +56,10 @@ class SendFriendRequestView(generics.CreateAPIView):
         
         if FriendRequest.objects.filter(from_user=from_user, to_user=to_user).exists():
             raise serializers.ValidationError("Friend request already sent.")
-        
-        # if FriendRequest.objects.filter(from_user=from_user, timestamp__gt=time.time() - 60).count() >= 3:
-        #     raise serializers.ValidationError("Cannot send more than 3 friend requests in a minute.")
+            
+        one_minute_ago = timezone.now() - timedelta(minutes=1)
+        if FriendRequest.objects.filter(from_user=from_user, timestamp__gt=one_minute_ago).count() >= 3:
+            raise serializers.ValidationError("Cannot send more than 3 friend requests in a minute.")
         
         serializer.save(from_user=from_user)
 
