@@ -16,6 +16,7 @@ class FriendRequest(models.Model):
     timestamp = models.DateTimeField(auto_now_add=True)
     accepted = models.BooleanField(default=False)
     action = models.CharField(max_length=10, blank=True, null=True)
+    timestamp = models.DateTimeField(auto_now_add=True)
     
     def __str__(self):
         return f"{self.from_user} -> {self.to_user}"
